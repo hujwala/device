@@ -2,7 +2,7 @@
 # ==================
 
 set :stage, :test
-set :branch, :test
+set :branch, :master
 set :deploy_to, '/home/deploy/u01/apps/qwinix/timesheet'
 set :log_level, :debug
 # Supports bulk-adding hosts to roles, the primary server in each group
