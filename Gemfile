@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+gem 'capistrano', '~> 3.5'
+ gem 'capistrano-bundler'
+ gem 'capistrano-rails'
+ gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 gem 'pg'
