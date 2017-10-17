@@ -1,4 +1,4 @@
-gset :application, 'Device'
+set :application, 'Device'
 set :repo_url, 'git@github.com:hujwala/device.git'
 set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/id_rsa" }
 set :keep_releases, 5
