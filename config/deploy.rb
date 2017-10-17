@@ -1,5 +1,5 @@
 set :application, 'Device'
-set :repo_url, 'git@github.com:hujwala/device.git'
+set :repo_url, 'https://github.com/hujwala/device.git'
 # set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/id_rsa" }
 set :rbenv_ruby, '2.2.3'
 # Default branch is :master
