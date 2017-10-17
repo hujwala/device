@@ -1,4 +1,3 @@
-require "whenever/capistrano"
 set :application, 'Device'
 set :repo_url, 'git@github.com:hujwala/device.git'
 set :ssh_options, { forward_agent: true, paranoid: true, keys: "~/.ssh/id_rsa" }
@@ -40,12 +39,7 @@ set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 
 namespace :deploy do
 
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      execute :touch, release_path.join('tmp/restart.txt')
-    end
-  end
+
 
   after :publishing, :restart
 
