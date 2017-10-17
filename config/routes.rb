@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcomes#index'
   namespace :api do
     scope :v1 do
       scope :accounts do
