@@ -13,7 +13,7 @@ test:
   adapter: postgresql
   encoding: unicode
   reconnect: false
-  database: device_test
+  database: timesheet_production
   pool: 5
   username: postgres
   password: password
